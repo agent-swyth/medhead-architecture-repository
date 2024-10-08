@@ -74,9 +74,21 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'TutorialSidebar',
+          position: 'left',
+          label: 'Tutorials',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'ArchitectureDocumentsSidebar',
           position: 'left',
           label: 'Architecture Documents',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'ArchitectureLogsSidebar',
+          position: 'left',
+          label: 'Architecture Logs',
         },
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -93,7 +105,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs/tutos/intro',
             },
           ],
         },

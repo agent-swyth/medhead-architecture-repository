@@ -1,4 +1,24 @@
-# Déclaration des travaux d’architecture
+---
+title: Déclaration de Travail d'Architecture
+---
+
+## Sommaire
+
+- [Sommaire](#sommaire)
+- [Déclaration des travaux d'architecture](#déclaration-des-travaux-darchitecture)
+- [Table des matières](#table-des-matières)
+- [Demande de projet et contexte](#demande-de-projet-et-contexte)
+  - [Demande spécifique](#demande-spécifique)
+  - [Alignement stratégique](#alignement-stratégique)
+  - [Simplifications suggérées](#simplifications-suggérées)
+- [Approche architecturale](#approche-architecturale)
+  - [Processus d’architecture](#processus-darchitecture)
+  - [Contenu de l’architecture](#contenu-de-larchitecture)
+- [Méthodologies pertinentes et normes du secteur](#méthodologies-pertinentes-et-normes-du-secteur)
+- [Prise en charge du continuum des entreprises et des solutions](#prise-en-charge-du-continuum-des-entreprises-et-des-solutions)
+- [Livrables de travail](#livrables-de-travail)
+- [Critères et procédures d’acceptation](#critères-et-procédures-dacceptation)
+- [Approbation](#approbation)
 
 ## Déclaration des travaux d'architecture
 

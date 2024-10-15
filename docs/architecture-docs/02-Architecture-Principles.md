@@ -1,10 +1,29 @@
-# Principes de l’architecture
-
-## Introduction
+---
+title: Principes d'Architecture
+---
 
 Afin d'orienter les efforts, les membres du consortium ont collaboré à la définition d'un ensemble de principes architecturaux par domaine, que nous privilégions. Comme pour tout principe, ceux-ci devraient être appliqués à tous les projets, et toute disparité évidente devrait être clairement justifiée par le contexte
 
 ## Résumé des principes
+
+- [Résumé des principes](#résumé-des-principes)
+- [A. Principes de l’architecture métier](#a-principes-de-larchitecture-métier)
+  - [Principe A1 : Primauté des principes](#principe-a1--primauté-des-principes)
+  - [Principe A2 : Maximiser les avantages pour l'entreprise](#principe-a2--maximiser-les-avantages-pour-lentreprise)
+  - [Principe A3 : Conformité aux lois et aux règlements](#principe-a3--conformité-aux-lois-et-aux-règlements)
+  - [Principe A4 : Adhésion au serment d'Hippocrate à tous les niveaux](#principe-a4--adhésion-au-serment-dhippocrate-à-tous-les-niveaux)
+- [B. Principes de l’architecture informatique (système, données, solutions, sécurité et opérations)](#b-principes-de-larchitecture-informatique-système-données-solutions-sécurité-et-opérations)
+  - [Principe B1 : Continuité des activités des systèmes critiques pour les patients](#principe-b1--continuité-des-activités-des-systèmes-critiques-pour-les-patients)
+  - [Principe B2 : Clarté grâce à une séparation fine des préoccupations](#principe-b2--clarté-grâce-à-une-séparation-fine-des-préoccupations)
+  - [Principe B3 : Intégration et livraison continues](#principe-b3--intégration-et-livraison-continues)
+  - [Principe B4 : Tests automatisés précoces, complets et appropriés](#principe-b4--tests-automatisés-précoces-complets-et-appropriés)
+  - [Principe B5 : Sécurité de type « shift-left »](#principe-b5--sécurité-de-type--shift-left-)
+  - [Principe B6 : Possibilité d'extension grâce à des fonctionnalités pilotées par les événements](#principe-b6--possibilité-dextension-grâce-à-des-fonctionnalités-pilotées-par-les-événements)
+- [C. Méthodologie architecturale et principes de processus](#c-méthodologie-architecturale-et-principes-de-processus)
+  - [Principe C1 : Personnalisation de l'ADM TOGAF 10](#principe-c1--personnalisation-de-ladm-togaf-10)
+  - [Principe C2 : Référentiel d'architecture centralisé et organisé comme source de référence](#principe-c2--référentiel-darchitecture-centralisé-et-organisé-comme-source-de-référence)
+  - [Principe C3 : Normes reconnues pour garantir les meilleures pratiques](#principe-c3--normes-reconnues-pour-garantir-les-meilleures-pratiques)
+  - [Principe C4 : Favoriser une culture de « learning » avec des preuves de concept et des prototypes](#principe-c4--favoriser-une-culture-de--learning--avec-des-preuves-de-concept-et-des-prototypes)
 
 ## A. Principes de l’architecture métier
 
@@ -14,7 +33,7 @@ Afin d'orienter les efforts, les membres du consortium ont collaboré à la déf
 
 Les principes énoncés ici s'appliquent à tous les membres du consortium, que nous appellerons collectivement l'entreprise.
 
-**Raisonnement :** 
+**Raisonnement :**
 
 La seule façon de fournir aux décideurs un niveau cohérent et mesurable d'informations de qualité est que toutes les organisations respectent ces principes.
 
@@ -42,7 +61,7 @@ Le système d’information, les processus métier et les livrables doivent êtr
 
 La politique de l'entreprise exige le respect des lois, politiques et réglementations. Cela n'exclut pas les améliorations des processus métier qui conduisent à des changements de politiques et de réglementations.
 
-**Implications :** 
+**Implications :**
 
 L'entreprise doit être attentive à se conformer aux lois, réglementations et politiques externes concernant la collecte, la conservation et la gestion des données, formations et accès aux réglementations. L'efficacité, le besoin et le bon sens ne sont pas les seuls moteurs. Les changements au niveau des lois et des réglementations peuvent entraîner des modifications dans nos processus ou applications.
 
@@ -65,7 +84,7 @@ négligence.
 
 ### Principe B1 : Continuité des activités des systèmes critiques pour les patients
 
-**Déclaration :** 
+**Déclaration :**
 
 Les opérations essentielles à la santé des patients, ainsi que les autres pratiques de soin, doivent être assurées malgré les interruptions du système.
 
@@ -92,7 +111,7 @@ La dépendance vis-à-vis des applications système partagées exige que les ris
 
 **Raisonnement :**
 
-Par entropie naturelle, les architectures complexes ont tendance à évoluer au fil du temps vers des réseaux régis par des dépendances complexes et difficiles à définir et des responsabilités mal placées. Les composants d'une telle architecture sont souvent étroitement et fortement couplés. 
+Par entropie naturelle, les architectures complexes ont tendance à évoluer au fil du temps vers des réseaux régis par des dépendances complexes et difficiles à définir et des responsabilités mal placées. Les composants d'une telle architecture sont souvent étroitement et fortement couplés.
 
 Cela peut, au fil du temps, entraîner une perte des fonctions de l’architecture qui limite l'agilité d'une plateforme à répondre à l'évolution des besoins de l'entreprise ou des patients. Il faut connaître les limites du système. Il faut rendre le système transparent, c'est-à-dire :
 
@@ -106,7 +125,7 @@ domaine des soins aux patients. Les dépendances étroites entre les capacités 
 
 ### Principe B3 : Intégration et livraison continues
 
-**Déclaration :** 
+**Déclaration :**
 
 L'intégration et la livraison continues de petits changements incrémentiels sont favorisées par rapport aux temps de cycles lents et aux intégrations majeures.
 
@@ -124,7 +143,7 @@ Les pipelines CI/CD doivent être facilement (ou automatiquement) déclenchés p
 
 ### Principe B4 : Tests automatisés précoces, complets et appropriés
 
-**Déclaration :** 
+**Déclaration :**
 
 Les applications doivent être construites à l'aide de tests automatisés qui garantissent la fiabilité à la fois fonctionnelle et non fonctionnelle de la mise en œuvre.
 
@@ -134,7 +153,7 @@ Les bogues logiciels sont inévitables et peuvent être causés par des erreurs 
 
 **Implication :**
 
-Ce principe encourage l'utilisation de techniques de développement dirigé par des tests (TDD pour Test-Driven Development en anglais). Afin de valider rapidement les exigences, il est recommandé d'utiliser le langage du domaine métier lors des tests. 
+Ce principe encourage l'utilisation de techniques de développement dirigé par des tests (TDD pour Test-Driven Development en anglais). Afin de valider rapidement les exigences, il est recommandé d'utiliser le langage du domaine métier lors des tests.
 
 Les premières exigences devraient être rédigées sous une forme qui facilite les tests.
 
@@ -169,7 +188,7 @@ Les pratiques suivantes devraient être examinées et adaptées pour permettre u
 
 ### Principe B6 : Possibilité d'extension grâce à des fonctionnalités pilotées par les événements
 
-**Déclaration :** 
+**Déclaration :**
 
 Tous les composants techniques doivent être conçus pour publier en continu les événements métiers, dont l’apparition déclenche d’autres fonctions métiers.
 
@@ -195,13 +214,13 @@ Afin de fournir un langage et une lisibilité communs pour l'architecture, il es
 
 **Implications :**
 
-L'ADM de TOGAF comprend la gouvernance et les protections nécessaires pour garantir une architecture capable de répondre aux exigences éthiques, métier et d’État concernant les logiciels centrés sur le patient. 
+L'ADM de TOGAF comprend la gouvernance et les protections nécessaires pour garantir une architecture capable de répondre aux exigences éthiques, métier et d’État concernant les logiciels centrés sur le patient.
 
 Le comité d’architecture du consortium devra collaborer avec les parties prenantes médicales, métiers et techniques pour convenir d'un cadre architectural, qui pourra être modifié selon les projets et les différents contextes métiers.
 
 ### Principe C2 : Référentiel d'architecture centralisé et organisé comme source de référence
 
-**Déclaration :** 
+**Déclaration :**
 
 Toutes les informations pertinentes sur le plan architectural devraient être disponibles dans un répertoire d'architecture géré en permanence par le comité d’architecture qui en sera responsable.
 
@@ -265,7 +284,7 @@ Le coût de l'investissement dans les efforts d'apprentissage pour réduire les 
 
 **Implications :**
 
-Les partenaires du consortium conviennent collectivement de stimuler une culture de prise de décision fondée sur des preuves et centrée sur l'apprentissage. 
+Les partenaires du consortium conviennent collectivement de stimuler une culture de prise de décision fondée sur des preuves et centrée sur l'apprentissage.
 
 Ce faisant, les exceptions et considérations suivantes devraient s'appliquer :
 
@@ -305,7 +324,7 @@ La validation de principe doit viser spécifiquement à respecter les principes 
 - Les plans de test doivent utiliser des scénarios BDD (behaviour-driven development - voir C3) pour décrire les critères d'acceptation métier qui sont dans la portée ;
 - Les plans de test doivent utiliser le langage commun de l'entreprise et être compréhensibles par les partenaires techniques et non techniques.
 
-**VII) Tester les rapports d'exécution pour documenter le comportement pris en charge** 
+**VII) Tester les rapports d'exécution pour documenter le comportement pris en charge :**
 
 Pour prendre en charge la visibilité des comportements attendus, l'apprentissage continu et la transparence concernant l'état du logiciel :
 

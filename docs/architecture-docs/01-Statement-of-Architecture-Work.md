@@ -2,11 +2,9 @@
 title: Déclaration de Travail d'Architecture
 ---
 
-## Sommaire
+### Sommaire
 
-- [Sommaire](#sommaire)
-- [Déclaration des travaux d'architecture](#déclaration-des-travaux-darchitecture)
-- [Table des matières](#table-des-matières)
+- [Informations générales](#informations-générales)
 - [Demande de projet et contexte](#demande-de-projet-et-contexte)
   - [Demande spécifique](#demande-spécifique)
   - [Alignement stratégique](#alignement-stratégique)
@@ -20,14 +18,12 @@ title: Déclaration de Travail d'Architecture
 - [Critères et procédures d’acceptation](#critères-et-procédures-dacceptation)
 - [Approbation](#approbation)
 
-## Déclaration des travaux d'architecture
+## Informations générales
 
 | Information | Détail |
 | :--- | :--- |
 | **Projet** | Preuve de concept (l'allocation de lits d'hôpital pour les urgences) |
 | **Client** | Consortium MedHead |
-
-## Table des matières
 
 ## Demande de projet et contexte
 

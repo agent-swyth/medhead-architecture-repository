@@ -4,9 +4,8 @@ title: Principes d'Architecture
 
 Afin d'orienter les efforts, les membres du consortium ont collaboré à la définition d'un ensemble de principes architecturaux par domaine, que nous privilégions. Comme pour tout principe, ceux-ci devraient être appliqués à tous les projets, et toute disparité évidente devrait être clairement justifiée par le contexte
 
-## Résumé des principes
+### Sommaire
 
-- [Résumé des principes](#résumé-des-principes)
 - [A. Principes de l’architecture métier](#a-principes-de-larchitecture-métier)
   - [Principe A1 : Primauté des principes](#principe-a1--primauté-des-principes)
   - [Principe A2 : Maximiser les avantages pour l'entreprise](#principe-a2--maximiser-les-avantages-pour-lentreprise)

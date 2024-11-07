@@ -1,1 +1,1 @@
-## Architecture Decisions Log
+# Architecture Decisions Log
